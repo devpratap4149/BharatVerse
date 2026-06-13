@@ -1,0 +1,660 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:#0f172a;
+color:white;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:30px;
+padding:20px;
+background:rgba(15,23,42,.95);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 2px 15px rgba(0,0,0,.2);
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:.3s;
+font-weight:500;
+}
+
+nav a:hover
+
+/* HERO */
+
+
+.hero{
+  min-height:90vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+
+  background-image:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1600");
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+.hero-content{
+  width:100%;
+  max-width:900px;
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+
+.hero h1,
+.hero h2,
+.hero p{
+  text-align:center;
+}
+
+.hero p{
+  max-width:700px;
+  margin:20px auto;
+}
+
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.primary-btn,
+.secondary-btn{
+padding:15px 30px;
+border-radius:12px;
+cursor:pointer;
+font-size:1rem;
+}
+
+.primary-btn{
+background:#38bdf8;
+border:none;
+color:white;
+}
+
+.secondary-btn{
+background:transparent;
+border:2px solid #38bdf8;
+color:#38bdf8;
+}
+
+/* FEATURES */
+
+.features{
+padding:100px 20px;
+text-align:center;
+}
+
+.feature-grid{
+margin-top:50px;
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.feature-card{
+background:#1e293b;
+padding:30px;
+border-radius:20px;
+transition:.3s;
+}
+
+.feature-card:hover{
+transform:translateY(-10px);
+}
+
+.feature-card h3{
+margin-bottom:15px;
+color:#38bdf8;
+}
+
+/* STATS */
+
+.stats{
+padding:60px 20px;
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.stat-card{
+background:#1e293b;
+padding:30px;
+border-radius:20px;
+text-align:center;
+}
+
+.stat-card h1{
+color:#38bdf8;
+font-size:3rem;
+}
+
+/* EXPLORE */
+
+.explore-page{
+padding:60px 30px;
+}
+
+.explore-header{
+text-align:center;
+margin-bottom:40px;
+}
+
+.explore-header h1{
+color:#38bdf8;
+font-size:3rem;
+}
+
+.search-section{
+display:flex;
+justify-content:center;
+margin-bottom:40px;
+}
+
+.search-section input{
+width:500px;
+max-width:90%;
+padding:15px;
+border:none;
+border-radius:12px;
+background:#1e293b;
+color:white;
+}
+
+/* MAP */
+
+.leaflet-container{
+margin-bottom:40px;
+border-radius:20px;
+}
+
+/* PLACES */
+
+.places-grid{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.place-card{
+background:#1e293b;
+border-radius:20px;
+overflow:hidden;
+transition:.3s;
+}
+
+.place-card:hover{
+transform:translateY(-8px);
+}
+
+.place-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.place-content{
+padding:20px;
+}
+
+.city-tag{
+color:#38bdf8;
+}
+
+.place-content h2{
+margin-top:10px;
+}
+
+.place-content p{
+margin-top:10px;
+color:#cbd5e1;
+}
+
+.place-content button{
+width:100%;
+margin-top:15px;
+padding:12px;
+border:none;
+border-radius:10px;
+background:#38bdf8;
+color:white;
+cursor:pointer;
+}
+
+/* ARTISANS */
+
+.artisans-page{
+padding:60px 30px;
+}
+
+.artisans-header{
+text-align:center;
+margin-bottom:40px;
+}
+
+.artisans-header h1{
+color:#38bdf8;
+font-size:3rem;
+}
+
+.artisans-grid{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.artisan-card{
+background:#1e293b;
+border-radius:20px;
+overflow:hidden;
+transition:.3s;
+}
+
+.artisan-card:hover{
+transform:translateY(-8px);
+}
+
+.artisan-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.artisan-content{
+padding:20px;
+}
+
+.craft-tag{
+color:#38bdf8;
+}
+
+.artisan-content button{
+width:100%;
+margin-top:15px;
+padding:12px;
+border:none;
+border-radius:10px;
+background:#38bdf8;
+color:white;
+cursor:pointer;
+}
+
+/* AI GUIDE */
+
+.ai-page{
+padding:60px 20px;
+text-align:center;
+}
+
+.ai-header h1{
+color:#38bdf8;
+font-size:3rem;
+}
+
+.ai-form{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.ai-form select{
+padding:15px;
+border:none;
+border-radius:10px;
+background:#1e293b;
+color:white;
+}
+
+.ai-form button{
+padding:15px 25px;
+border:none;
+border-radius:10px;
+background:#38bdf8;
+color:white;
+cursor:pointer;
+}
+
+.trip-card{
+max-width:700px;
+margin:40px auto;
+background:#1e293b;
+padding:30px;
+border-radius:20px;
+text-align:left;
+}
+
+/* ABOUT */
+
+.about-page{
+padding:60px 30px;
+}
+
+.about-hero{
+text-align:center;
+max-width:900px;
+margin:auto;
+}
+
+.about-hero h1{
+color:#38bdf8;
+font-size:3rem;
+}
+
+.about-hero p{
+margin-top:20px;
+line-height:1.8;
+}
+
+.about-section{
+margin-top:60px;
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.about-card{
+background:#1e293b;
+padding:25px;
+border-radius:20px;
+}
+
+.impact-grid{
+margin-top:40px;
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.impact-card{
+background:#1e293b;
+padding:25px;
+border-radius:20px;
+text-align:center;
+}
+
+.impact-card h1{
+color:#38bdf8;
+}
+
+/* CTA */
+
+.cta{
+text-align:center;
+padding:80px 20px;
+}
+
+.cta h2{
+margin-bottom:20px;
+}
+
+.cta p{
+margin-bottom:30px;
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:3.5rem;
+}
+
+.hero h2{
+font-size:1.4rem;
+}
+
+nav{
+gap:15px;
+flex-wrap:wrap;
+}
+
+.search-section input{
+width:90%;
+}
+
+}
+
+/*LOGIN PAGE
+
+
+/* ================================
+   BACKGROUND (Login + Signup)
+================================ */
+.login-container,
+.signup-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  position: relative;
+  overflow: hidden;
+}
+
+/* glowing blobs */
+.login-container::before,
+.signup-container::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #667eea;
+  border-radius: 50%;
+  filter: blur(120px);
+  top: -50px;
+  left: -80px;
+  opacity: 0.4;
+}
+
+.login-container::after,
+.signup-container::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #764ba2;
+  border-radius: 50%;
+  filter: blur(120px);
+  bottom: -80px;
+  right: -80px;
+  opacity: 0.3;
+}
+
+/* ================================
+   GLASS CARD (Login + Signup)
+================================ */
+.login-card,
+.signup-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 35px;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+
+  z-index: 1;
+  animation: fadeIn 0.6s ease;
+}
+
+/* ================================
+   TITLE
+================================ */
+.login-card h2,
+.signup-card h2 {
+  text-align: center;
+  color: #1f1f1f;
+  margin-bottom: 22px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+/* ================================
+   INPUTS
+================================ */
+.login-card input,
+.signup-card input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+
+  font-size: 14px;
+  color: #222;
+
+  transition: 0.3s ease;
+}
+
+.login-card input::placeholder,
+.signup-card input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.login-card input:focus,
+.signup-card input:focus {
+  border: 1px solid #667eea;
+  box-shadow: 0 0 10px rgba(102, 126, 234, 0.4);
+}
+
+/* ================================
+   BUTTON
+================================ */
+.login-card button,
+.signup-card button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-size: 15px;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-card button:hover,
+.signup-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(102, 126, 234, 0.4);
+}
+
+/* ================================
+   FOOTER TEXT
+================================ */
+.login-card p,
+.signup-card p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.login-card a,
+.signup-card a {
+  color: #5a67d8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-card a:hover,
+.signup-card a:hover {
+  text-decoration: underline;
+}
+
+/* ================================
+   ANIMATION
+================================ */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.details-page{
+  max-width:1000px;
+  margin:auto;
+  padding:50px 20px;
+}
+
+.details-image{
+  width:100%;
+  height:450px;
+  object-fit:cover;
+  border-radius:20px;
+  margin-bottom:30px;
+}
+
+.details-page h1{
+  color:#38bdf8;
+  margin-bottom:10px;
+}
+
+.details-page h3{
+  color:#cbd5e1;
+  margin-bottom:20px;
+}
+
+.details-page p{
+  line-height:1.8;
+}
+
+.details-box{
+  margin-top:30px;
+  background:#1e293b;
+  padding:25px;
+  border-radius:20px;
+}
