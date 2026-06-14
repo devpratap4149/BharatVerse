@@ -658,3 +658,40 @@ width:90%;
   padding:25px;
   border-radius:20px;
 }
+
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:15px 40px;
+
+  background:#0f172a;
+
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.navbar-logo img{
+  height:60px;
+  width:auto;
+}
+
+.nav-links{
+  display:flex;
+  gap:20px;
+  align-items:center;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#38bdf8;
+}
