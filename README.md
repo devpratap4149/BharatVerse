@@ -1,16 +1,88 @@
-# React + Vite
+# BharatVerse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Trend Se Pehle Discover Karo**
 
-Currently, two official plugins are available:
+BharatVerse is an AI-powered cultural tourism platform that helps travelers discover India's hidden heritage sites, local artisans, and authentic cultural experiences.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live Demo
 
-## React Compiler
+🔗 [Visit BharatVerse](https://bharat-verse-one.vercel.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## GitHub Repository
 
-## Expanding the ESLint configuration
+🔗 [BharatVerse Repository](https://github.com/devpratap4149/BharatVerse)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Overview
+
+Most travel platforms focus only on popular tourist destinations. BharatVerse focuses on discovering underrated heritage places, promoting local artisans, and helping travelers experience authentic Indian culture.
+
+The platform includes heritage exploration, interactive maps, AI-based travel recommendations, artisan discovery, favorites, login/signup pages, and detailed place information.
+
+## Features
+
+- Hidden Heritage Explorer
+- Interactive Map using OpenStreetMap
+- AI Travel Guide
+- Local Artisan Marketplace
+- Save to Favorites
+- Place Details Page
+- Login and Signup UI
+- Responsive Modern UI
+- Cultural Awareness Section
+
+## Tech Stack
+
+### Frontend
+- React.js
+- React Router
+- CSS
+
+### Maps
+- React Leaflet
+- OpenStreetMap
+
+### Deployment
+- GitHub
+- Vercel
+
+## Screenshots
+
+### Home Page
+_Add screenshot here_
+
+### Explore Page
+_Add screenshot here_
+
+### AI Guide
+_Add screenshot here_
+
+### Artisans Page
+_Add screenshot here_
+
+## Folder Structure
+
+```text
+src
+├── assets
+├── components
+│   ├── Navbar.jsx
+│   ├── PlaceCard.jsx
+│   ├── ArtisanCard.jsx
+│   ├── MapView.jsx
+│   └── Footer.jsx
+├── data
+│   ├── places.js
+│   └── artisans.js
+├── pages
+│   ├── Home.jsx
+│   ├── Explore.jsx
+│   ├── Artisans.jsx
+│   ├── AIGuide.jsx
+│   ├── Favorites.jsx
+│   ├── Login.jsx
+│   ├── Signup.jsx
+│   ├── PlaceDetails.jsx
+│   └── About.jsx
+├── App.jsx
+├── App.css
+└── main.jsx
