@@ -45,20 +45,6 @@ The platform includes heritage exploration, interactive maps, AI-based travel re
 - GitHub
 - Vercel
 
-## Screenshots
-
-### Home Page
-_Add screenshot here_
-
-### Explore Page
-_Add screenshot here_
-
-### AI Guide
-_Add screenshot here_
-
-### Artisans Page
-_Add screenshot here_
-
 ## Folder Structure
 
 ```text
