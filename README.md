@@ -46,7 +46,7 @@ The platform includes heritage exploration, interactive maps, AI-based travel re
 - Vercel
 
 ## Folder Structure
-
+ 
 ```text
 src
 ├── assets
